@@ -55,7 +55,7 @@ AddEventHandler('veh_SR:CheckMoneyForVeh', function(vehicle, price ,veh_type)
                     end})
 
                 TriggerClientEvent('veh_SR:CloseMenu', player, vehicle, veh_type)
-                vRPclient.notify(player,{"Payed ~r~$ "..price.."."})
+                vRPclient.notify(player,{"Paid ~r~$ "..price.."."})
               else
                 vRPclient.notify(player,{"~r~Insufficient funds."})
               end
