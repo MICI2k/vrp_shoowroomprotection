@@ -67,7 +67,8 @@ local vehshop = {
 			buttons = {
 				{name = "Blista", costs = 500, description = {}, model = "blista"},
 				{name = "Brioso R/A", costs = 5010000, description = {}, model = "brioso"},
-				{name = "Sultan RS", costs = 500, description = {}, model = "sultanrs"}
+				{name = "Sultan RS", costs = 500, description = {}, model = "sultanrs"},
+				{name = "Adder", costs = 500, description = {}, model = "adder"}
 			}
 		},
 	}
