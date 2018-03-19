@@ -45,7 +45,7 @@ AddEventHandler('veh_SR:CheckMoneyForVeh', function(vehicle, price ,veh_type)
     local player = vRP.getUserSource({user_id})
     MySQL.query("vRP/get_vehicle", {user_id = user_id, vehicle = vehicle}, function(pvehicle, affected)
         if #pvehicle > 0 then
-          vRPclient.notify(player,{"~r~Deja detii acest vehicul"})
+          vRPclient.notify(player,{"~r~You already own a car."})
         else
           for i=1, #vehgarage.vehicles do
             if vehgarage.vehicles[i].model == vehicle and vehgarage.vehicles[i].costs == price then
@@ -55,12 +55,10 @@ AddEventHandler('veh_SR:CheckMoneyForVeh', function(vehicle, price ,veh_type)
                     end})
 
                 TriggerClientEvent('veh_SR:CloseMenu', player, vehicle, veh_type)
-                vRPclient.notify(player,{"Platit ~r~$ "..price.."."})
+                vRPclient.notify(player,{"Payed ~r~$ "..price.."."})
               else
-                vRPclient.notify(player,{"~r~Fodnuri insuficiente."})
+                vRPclient.notify(player,{"~r~Insufficient funds."})
               end
-            else
-              vRPclient.notify(player,{"Modificare neautorizata detectata."})
             end
           end
         end
