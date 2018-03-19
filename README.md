@@ -11,3 +11,22 @@ Comment out the MySQL.query("vRP/showroom_columns") adding -- before it
 Restart the server one more time.
 You're good to go from now on.
 
+Thanks for Leo SHX for helping me with this.
+
+# License
+
+FiveM Scripts
+Copyright (C) 2018 Sighmir
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
